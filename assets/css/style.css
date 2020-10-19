@@ -1,0 +1,40 @@
+body{
+    max-height: 50vh;
+margin-top: 0%;
+margin-left: 0%;
+}
+
+.left-nav-one { grid-area: nav-one; 
+}
+.left-nav-two { grid-area: nav-two; }
+.left-nav-three { grid-area: nav-three; }
+.myimage { 
+    grid-area: myimage;
+    filter: drop-shadow(5rem 20rem 0.1rem #00B070);
+  
+  }
+ul {
+  list-style: none;
+}
+
+.grid-container {
+    height: 77vh;
+  display: grid;
+  grid-template-areas:
+    'nav-one myimage'
+    'nav-two  myimage'
+    'nav-three myimage';
+grid-template-columns: 25% 75%;
+grid-template-rows: 40% 37% 53%;
+
+/*   padding: 10px;
+
+ */}
+
+.grid-container > div {
+  display: subgrid;
+  background-color: #d9e4dd;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
