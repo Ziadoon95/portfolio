@@ -2,29 +2,339 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 
 
-<div class="grid-container">
-  <div class="left-nav-one">
-    <img src="assets/img/Group 1.png" width="120px" />
-    <h3>AL-OBAIDI Ziadoon</h3>
 
+<div class="wrapper">
+  <div class="sidebar">
+<!--     <a href="#Home-page"><img class="sidebar-logo" src="assets/img/logo.svg" alt=""></a>
+ -->
+    <div id="sidebar-icons-group">
+      <img class="sidebar-icons" src="assets/img/aboutme.svg" alt="">
+      <img class="sidebar-icons" src="assets/img/skills.svg" alt="">
+      <img class="sidebar-icons" src="assets/img/portfolio.svg" alt="">
+    </div>
+   
   </div>
- 
-  <div class="left-nav-two">
- 
-    <ul>
-      <li>Portfolio</li>
-      <li>about me </li>
-      <li>Contact Me</li>
-    </ul>
-  </div>
-  <div class="left-nav-three">icons</div>
-   <img class="myimage" src="assets/img/zaidoon.png" width="800px" alt=""></div>
 
+  <div class="main">
+    <div id="Home-page">
+      <div class="main-content-left"> 
+          <p class="nametitle titles">Hi,</p>
+          <p class="nametitle titles">My name is Ziadoon</p>
+          <p class="simpleDesc">“ for me programming is a tool that we use     now, to make our future better ...”</p>
+          <p class="simpleDesc">#junior web developer</p>
+          <button id="letsTalk">Lets talk !</button>
+        </div>
+    <div class="main-content-right">
+          <img src="assets/img/profilepic.svg" alt="">
+
+    </div>
+    </div>
+
+    <div id="portfolio-page">
+      <!-- Bjoutik -->
+            <div class="projects-grid" id="bjoutik"> 
+              <img class="first-col bjo-grid" src="assets/img/mdi_filter_1.png" alt="">
+              <p class="second-col-first bjo-grid">2020</p>
+              <p class="second-col-second bjo-grid">Bjoutik</p>
+              <img onclick="myFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+      
+              <p class="third-col-first bjo-grid">Project</p>
+              <p class="third-col-second bjo-grid">Sirius School</p>
+      
+              <img src="assets/img/bjoutika-mocup.png" class="fourth-col bjo-grid" width="100px">
+            </div>
+            <!-- Bjoutik scroll content-->
+            <div id="bjoutik-content"class="grid-contents">
+              <p class="date-project">11/2020</p>
+              <div class="desc">Description</div>
+              <div class="techAndRole">Technologie utilisé</div>
+              <div class="moNrole">Mon role</div>
+              <div class="bjoutik-description">: Bjoutik, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
+                en equipe de 4 personnes, intergrateurs et desgineurs :</div>
+              <div class="names">
+             
+              </div>
+        
+              <div class="tech-used">
+                : Wordpress - CSS
+              </div>
+              <div class="role-content">
+                : Intérgrateur
+              </div>
+              <button id="Take-a-look-button">Take a look</button>
+            </div>
+            <!-- TFOG -->
+            <div class="projects-grid" id="tfog"> 
+              <img class="first-col bjo-grid" src="assets/img/mdi_filter_2.png" alt="">
+              <p class="second-col-first bjo-grid">2020</p>
+              <p class="second-col-second bjo-grid">TFOG</p>
+              <img onclick="tfogFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+      
+              <p class="third-col-first bjo-grid">Hackathon</p>
+              <p class="third-col-second bjo-grid">wallifornia music tech</p>
+              <img src="assets/img/medal.png" class="third-col-third bjo-grid" width="40px">
+              <img  src="assets/img/tfog-mocup.png" class="fourth-col bjo-grid" width="100px">
+            </div>
+             <!-- tfog scroll content-->
+             <div id="tfog-content"class="grid-contents">
+              <p class="date-project">11/2020</p>
+              <div class="desc">Description</div>
+              <div class="techAndRole">Technologie utilisé</div>
+              <div class="moNrole">Mon role</div>
+              <div class="bjoutik-description">: Bjoutik, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
+                en equipe de 4 personnes, intergrateurs et desgineurs :</div>
+              <div class="names">
+               
+              </div>
+        
+              <div class="tech-used">
+                : Wordpress - CSS
+              </div>
+              <div class="role-content">
+                : Intérgrateur
+              </div>
+              <button id="Take-a-look-button">Take a look</button>            
+            
+            </div>
+         
+
+            
+            <!-- Recitroc -->
+            <div class="projects-grid" id="recitroc"> 
+              <img class="first-col bjo-grid" src="assets/img/mdi_filter_3.png" alt="">
+              <p class="second-col-first bjo-grid">2020</p>
+              <p class="second-col-second bjo-grid">Recitroc</p>
+              <img onclick="reciFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+      
+              <p class="third-col-first bjo-grid">Hackathon</p>
+              <p class="third-col-second bjo-grid">citizens of wallonia</p>
+              <img src="assets/img/medals.png" class="third-col-third bjo-grid" width="145px">
+      
+              <img src="assets/img/recitroc-mocup.png" class="fourth-col bjo-grid" width="100px">
+            
+            </div>
+              <!-- recitroc scroll content-->
+              <div id="reci-content"class="grid-contents">
+                <p class="date-project">11/2020</p>
+                <div class="desc">Description</div>
+                <div class="techAndRole">Technologie utilisé</div>
+                <div class="moNrole">Mon role</div>
+                <div class="bjoutik-description">: Bjoutik, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
+                  en equipe de 4 personnes, intergrateurs et desgineurs :</div>
+                <div class="names">
+                
+                </div>
+          
+                <div class="tech-used">
+                  : Wordpress - CSS
+                </div>
+                <div class="role-content">
+                  : Intérgrateur
+                </div>
+                <button id="Take-a-look-button">Take a look</button>            
+              
+              </div>
+            <!-- Mirabelles -->
+            <div class="projects-grid" id="mirabelles"> 
+              <img class="first-col bjo-grid" src="assets/img/mdi_filter_4.png" alt="">
+              <p class="second-col-first bjo-grid">2019</p>
+              <p class="second-col-second bjo-grid">Maison les Mirabelles</p>
+              <img onclick="miraFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+      
+              <p class="third-col-first bjo-grid">Project</p>
+              <p class="third-col-second bjo-grid">Sirius school</p>
+      
+              <img src="assets/img/mirabelles-mocup.png" class="fourth-col bjo-grid" width="100px">
+            </div>
+            <!-- mirabelles scroll content-->
+            <div id="mira-content"class="grid-contents">
+              <p class="date-project">11/2020</p>
+              <div class="desc">Description</div>
+              <div class="techAndRole">Technologie utilisé</div>
+              <div class="moNrole">Mon role</div>
+              <div class="bjoutik-description">: Bjoutik, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
+                en equipe de 4 personnes, intergrateurs et desgineurs :</div>
+              <div class="names">
+          
+              </div>
+        
+              <div class="tech-used">
+                : Wordpress - CSS
+              </div>
+              <div class="role-content">
+                : Intérgrateur
+              </div>
+              <button id="Take-a-look-button">Take a look</button>            
+            
+            </div>
+          </div>
+          <div id="skills-page">
+            <p>Skills</p>
+            <div id="languages"class="grid-skills-lang">
+              
+              <div class="skills-titles"><p>Langauges & frameworks</p></div>
+              <div id="skill-lang-icon">
+                <img src="assets/img/Group.svg" alt="">
+              </div>
+              <div class="html">
+                <img src="assets/img/html.svg" alt="">
+              </div>
+              <div class="css">
+                <img src="assets/img/css.svg" alt="">
+              </div>
+              <div class="js">
+                <img src="assets/img/js.svg" alt="">
+              </div>
+              <div class="php">
+                <img src="assets/img/php.svg" alt="">
+              </div>
+              <div class="laravel">
+                <img src="assets/img/laravel.svg" alt="">
+              </div>
+                      
+            
+            </div>
+          
+
+            <div id="tools" class="grid-skills-tools">
+              
+              <div class="tools-titles"><p>Tools & Applications</p></div>
+              <div id="skill-two-icon">
+                <img src="assets/img/settings 1.svg" alt="">
+              </div>
+              <div class="github">
+                <img src="assets/img/github(1).svg" alt="">
+              </div>
+              <div class="vim">
+                <img src="assets/img/vm.svg" alt="">
+              </div>
+              <div class="figma">
+                <img src="assets/img/figma.svg" alt="">
+              </div>
+              <div class="gns3">
+                <img src="assets/img/gns3.svg" alt="">
+              </div>
+            </div> 
+
+          </div>
+
+          <div class="about-me">
+            <div class="grid-about-me">
+              <p class="shortbio">Short biography</p> 
+              <p class="borned">
+                Borned in 1995, raised In baghdad, and
+                i started learning programming in 2019..
+              </p> 
+              <p class="about-me-desc">
+                I am Ziadoon from Iraq, junior web developer, i live in belgium since 2015
+                Finding solutions for a sepcific probleme\s, creativity
+                and rennovation that what the programming means to me and why i am passionate by.
+
+                I dont like working in stress enviromenet between group members, using only wordpress and other CMS for the whole job time .
+
+                I like working in group, helping others when they find difficulties if i could, learn from others experiences and
+                Take the hard tasks of a project.
+              </p>
+              <p class="fav-q">
+                favorite quote 
+                “We all have two lives the second one starts when we realise that we have only one “ Tom Hiddleston
+              </p>
+            </div>
+
+          </div> 
+
+          <div class="contact-me">
+            
+
+      
+
+
+          </div>
+          <div class="container">
+            <form>
+              <ul class="flex-outer">
+                <li>
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="Enter your first name here">
+                </li>
+                <li>
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Enter your last name here">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter your email here">
+                </li>
+                <li>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" placeholder="Enter your phone here">
+                </li>
+                <li>
+                  <label for="message">Message</label>
+                  <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                </li>
+               
+                <li>
+                  <button type="submit">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+          <script>
+            
+            function myFunction() {
+              
+              var x = document.getElementById("bjoutik-content");
+              if (x.style.display === "none") {
+                x.style.display = "grid";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            function tfogFunction() {
+              var t = document.getElementById("tfog-content");
+              if (t.style.display === "none") {
+                t.style.display = "grid";
+              } else {
+                t.style.display = "none";
+              }
+            }
+            function reciFunction() {
+              var t = document.getElementById("reci-content");
+              if (t.style.display === "none") {
+                t.style.display = "grid";
+              } else {
+                t.style.display = "none";
+              }
+            }
+            function miraFunction() {
+              var t = document.getElementById("mira-content");
+              if (t.style.display === "none") {
+                t.style.display = "grid";
+              } else {
+                t.style.display = "none";
+              }
+            }
+
+
+
+           
+      
+      
+      
+  </script> 
 
 </body>
 </html>

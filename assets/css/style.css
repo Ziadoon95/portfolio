@@ -1,40 +1,531 @@
-body{
-    max-height: 50vh;
-margin-top: 0%;
-margin-left: 0%;
-}
 
-.left-nav-one { grid-area: nav-one; 
-}
-.left-nav-two { grid-area: nav-two; }
-.left-nav-three { grid-area: nav-three; }
-.myimage { 
-    grid-area: myimage;
-    filter: drop-shadow(5rem 20rem 0.1rem #00B070);
-  
-  }
-ul {
-  list-style: none;
-}
-
-.grid-container {
-    height: 77vh;
-  display: grid;
-  grid-template-areas:
-    'nav-one myimage'
-    'nav-two  myimage'
-    'nav-three myimage';
+    /*
 grid-template-columns: 25% 75%;
 grid-template-rows: 40% 37% 53%;
-
+*/
 /*   padding: 10px;
 
- */}
-
-.grid-container > div {
-  display: subgrid;
-  background-color: #d9e4dd;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+ */
+ :root {
+        --yellow : #ECBD2C ;
 }
+ .sidebar {
+        background-color: #F1F1F1 ;
+      width: 4%;
+      height: 56vh;
+      min-height: 200px;
+      overflow: auto;
+      position: -webkit-sticky;
+      position: sticky;
+               top: 18%;
+         border-radius: 0px 10px 10px 0px;
+      }
+      
+      .main {
+              flex-direction :column ;
+      width: 96%;
+      height: 750vh;
+      min-height: 1000px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+            
+      }
+      
+      .main,
+      .sidebar {
+      color: #222;
+      padding: 15px;
+      
+      }
+      
+      .wrapper {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      }
+      
+      body {
+     background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
+box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+      font-size: 20px;
+      box-sizing: border-box;
+      font-family: Lato, sans-serif;
+      margin: 0px;
+      
+      }
+      p {
+        color : white ; 
+      
+      }
+      
+      .bottom {
+      justify-self: bottom;
+      }
+      /* new */
+      
+      #sidebar-icons-group{
+           
+      }
+      .sidebar-icons {
+              margin:40px 0px ;  
+      }
+      .simpleDesc {
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+      }
+      .titles {
+        font-family: 'Marcellus SC', serif;
+        font-size: 38px;
+        color : #ECBD2C ;
+      }
+      #Home-page{
+              display: flex;
+              padding: 8% 10% ;
+      }
+      .main-content-left{
+              width: 50%;
+      }
+      .main-content-right{
+              width: 50%;
+      }
+      #letsTalk{
+              margin-top: 20px;
+              background-color: transparent ;
+              border: solid 1px #ECBD2C ;
+              color : #ECBD2C ;
+               font-family: 'Jura', sans-serif;
+                font-size: 20px;
+      padding : 10px 30px;
+             border-radius: 5px;
+      }
+      .first-col{
+              padding: 20px 0px;
+              grid-area: first-col ;
+      }
+      .second-col-first {
+              grid-area: second-col-first ; 
+                            padding: 15px 0px;
+
+      }
+      .second-col-second{
+              grid-area: second-col-second ;
+              padding: px 10px;
+                 font-family: 'Marcellus SC', serif;
+      }
+      .second-col-third {
+              grid-area: second-col-third ;
+      }
+      .third-col-first {
+              grid-area: third-col-first ; 
+padding: 18px 0px;
+              color: var(--yellow);
+                 font-family: 'Marcellus SC', serif;
+}
+      .third-col-second {
+              grid-area: third-col-second ;
+      }
+      #second-medal{
+              grid-area: second-medal;
+      }
+      .third-col-third{
+              grid-area: third-col-third ;
+      }
+      .fourth-col{
+              grid-area: fourth-col ; 
+              
+      }
+      .projects-grid{
+                 font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+
+        width: 100%;
+        height: 250px;
+        grid-template-areas: ". second-col-first third-col-first fourth-col"
+                             "first-col  second-col-second third-col-second fourth-col"
+                             ".  second-col-third . fourth-col";
+        grid-template-rows: 70px 70px 60px ;
+        grid-template-columns: 15% 30% 30% 30% ;
+      
+      }
+      #tfog{
+                 font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+
+        width: 100%;
+        height: 250px;
+        grid-template-areas: ". second-col-first third-col-first fourth-col"
+                             "first-col  second-col-second third-col-second fourth-col"
+                             ".  second-col-third third-col-third  fourth-col";
+        grid-template-rows: 70px 70px 60px ;
+        grid-template-columns: 15% 30% 30% 30% ;
+      
+      }
+      #recitroc{
+                 font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+
+        width: 100%;
+        height: 250px;
+        grid-template-areas: ". second-col-first third-col-first fourth-col"
+                             "first-col  second-col-second third-col-second fourth-col"
+                             ".  second-col-third third-col-third  fourth-col";
+        grid-template-rows: 70px 70px 60px ;
+        grid-template-columns: 15% 30% 30% 30% ;
+      
+      }
+      .desc{
+              grid-area: desc;
+      }
+.github,.html ,.desc, .techAndRole , .moNrole {
+        border-left : 1px solid var(--yellow) ;
+        padding: 0% 0% 0% 10%;
+}
+      .techAndRole{
+              grid-area: techAndRole;
+      }
+      .moNrole{
+              grid-area: moNrole;
+      }
+      .bjoutik-description{
+              grid-area: bjoutik-description;
+      }
+      .names{
+              grid-area: names;
+      }
+      .tech-used{
+              grid-area: tech-used;
+      }
+      .role-content{
+              grid-area: role-content;
+      }
+.date-project{
+        color : var(--yellow);
+        grid-area: date-project ;
+}
+     
+.bjo-grid{
+          justify-self: center;
+}
+      .bjo-grid{
+                justify-self: center;
+}
+.grid-contents{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 70%;
+        padding : 10px 0px 0px 10px;
+        margin:0% 10% ;
+        height: 250px;
+        grid-template-areas: 
+                "date-project . ."
+                "desc bjoutik-description bjoutik-description"
+                       "desc names names"
+                       "techAndRole tech-used tech-used "
+                "moNrole role-content take-a-look-button"
+                      ;
+          grid-template-rows: 25% 40% 20% ;
+        grid-template-columns: 30% 40% 30%  ; 
+        margin-bottom: 10%; 
+        }
+.skills-titles{
+      
+        grid-area: skills-titles;
+}
+.tools-titles{
+        grid-area : tools-titles;
+        justify-self: flex-start ;
+}
+.github {
+        grid-area : github ; 
+}
+.vim {
+        grid-area : vim ;
+}
+.figma {
+        grid-area : figma ;
+}
+.gns3 {
+        grid-area : gns3;
+}
+.html {
+        grid-area: html;
+}
+.css {
+        grid-area: css;
+}
+.php {
+        grid-area: php;
+}
+.laravel {
+        grid-area: laravel;
+}
+.js {
+        grid-area: js;
+}
+
+#Take-a-look-button{
+        background-color: var(--yellow);
+        border: none ;
+        height: max-content;
+        justify-self: end;
+        padding: 10px 20px;
+        grid-area: take-a-look-button;
+        /*width: 40%;*/
+}
+.nameone, .nametwo , .namethird {
+        background-color: #1D1D1D;
+}
+.nameone{
+        grid-area: nameone;  
+}
+.nametwo{
+        grid-area: nametwo;  
+}
+.namethird{
+        grid-area: namethird;  
+}
+.label-shap{
+     /*  display: none ;*/
+        grid-area: label-shap;  
+}
+.label-shape-text {
+        transform: rotate(-90deg);
+        
+
+      
+}
+/*  .second-col-third: {
+        transform: rotate(90deg) ;
+
+}  */
+
+#shape{
+        background-color: turquoise;
+        border : 1px solid turquoise;
+        display: inline-block;
+        color:white ;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        width: 40%;
+        margin:10% 10% ;
+        height: 250px;
+        grid-template-areas: 
+"nameone ."
+"nametwo label-shap"
+"namethird ."
+
+              
+                      ;
+       /*   grid-template-rows: 25% 40% 20% ;*/
+        grid-template-columns: 80% 20%  ; 
+       
+}
+.names-content{
+        
+}
+
+
+
+
+/* Add styles to the form container */
+.form-container {
+
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+#skill-lang-icon{
+        grid-area: skill-lang-icon;
+}
+#skill-two-icon{
+        grid-area: skill-two-icon;
+}
+.shortbio{
+        grid-area : shortbio;
+}
+.borned{
+        grid-area : borned;
+}
+.about-me-desc{
+        grid-area : about-me-desc;
+}
+.fav-q{
+        grid-area : fav-q;
+}
+.grid-skills-tools{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 70%;
+        padding : 10px 0px 0px 10px;
+        margin:0% 10% ;
+        height: 250px;
+        grid-template-areas: 
+                "skill-two-icon tools-titles tools-titles tools-titles  . . . . . ."
+                "github github vim vim figma figma gns3 gns3 . ."
+                      ;
+          grid-template-rows: 35% 65%   ;
+        grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+        margin-bottom: 10%; 
+        }
+
+.grid-skills-lang{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 70%;
+        padding : 10px 0px 0px 10px;
+        margin:0% 10% ;
+        height: 250px;
+        grid-template-areas: 
+                "skill-lang-icon  skills-titles skills-titles skills-titles .  . . . . . "
+                "html html css css js js php php laravel laravel"
+                      ;
+          grid-template-rows: 35% 65%  ;
+        grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+        margin-bottom: 10%; 
+        }
+.grid-about-me{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 70%;
+        padding : 10px 0px 0px 10px;
+        margin:0% 10% ;
+        height: 700px;
+        grid-template-areas: 
+                ". shortbio ."
+                ". borned ."
+                ". about-me-desc ."
+                ". fav-q ."
+                      ;
+          grid-template-rows: 10% 20% 50% 20%  ;
+        grid-template-columns: 22% 64% 22% ; 
+        margin-bottom: 10%; 
+        }
+
+.contact-content {
+        grid-area: c-c;
+        display: flex;
+        align-items:center ;
+        flex-direction: column;
+        margin-right: 10% ;
+}
+
+.message,.email,.nom-prenom  {
+        padding: 10px 10%;  
+        
+}
+.contact-me-button {
+        align-self: auto;
+        border: none ; 
+        padding: 10px 10%;  
+        margin: 5% 0%;
+}
+.container {
+        width: 80%;
+        max-width: 650px;
+        margin: 0 auto;
+        color: #f2f2f2;
+      }
+      
+      .container * {
+        box-sizing: border-box;
+      }
+      
+      .flex-outer,
+      .flex-inner {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .flex-outer {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .flex-outer li,
+      .flex-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      
+      .flex-inner {
+        padding: 0 8px;
+        justify-content: space-between;  
+      }
+      
+      .flex-outer > li:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      
+      .flex-outer li label,
+      .flex-outer li p {
+        padding: 8px;
+        font-weight: 300;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+      }
+      
+      .flex-outer > li > label,
+      .flex-outer li p {
+        flex: 1 0 120px;
+        max-width: 220px;
+      }
+      
+      .flex-outer > li > label + *,
+      .flex-inner {
+        flex: 1 0 220px;
+      }
+      
+      .flex-outer li p {
+        margin: 0;
+      }
+      
+      .flex-outer li input:not([type='checkbox']),
+      .flex-outer li textarea {
+        padding: 15px;
+        border: none;
+      }
+      
+      .flex-outer li button {
+        margin-left: auto;
+        padding: 8px 16px;
+        border: none;
+        background: #333;
+        color: #f2f2f2;
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        border-radius: 2px;
+      }
+      
+      .flex-inner li {
+        width: 100px;
+      }
