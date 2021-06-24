@@ -6,6 +6,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -17,30 +19,46 @@
 <!--     <a href="#Home-page"><img class="sidebar-logo" src="assets/img/logo.svg" alt=""></a>
  -->
     <div id="sidebar-icons-group">
-      <img class="sidebar-icons" src="assets/img/aboutme.svg" alt="">
-      <img class="sidebar-icons" src="assets/img/skills.svg" alt="">
-      <img class="sidebar-icons" src="assets/img/portfolio.svg" alt="">
+     <a href="#Home-page"><img class="sidebar-icons" src="assets/img/logo.svg" width="50px"alt=""></a> 
+     <a href="#about-me"><img class="sidebar-icons" src="assets/img/aboutme.svg" width="42px" alt=""></a> 
+      <a href="#skills-page"><img class="sidebar-icons" src="assets/img/skills.svg" width="50px"alt=""></a> 
+      <a href="#portfolio-page"><img class="sidebar-icons" src="assets/img/portfolio.svg" width="50px"alt=""></a> 
     </div>
    
   </div>
 
   <div class="main">
     <div id="Home-page">
+
+      <div class="main-content-right">
+        <img src="assets/img/zaid1.png"  alt="">
+
+    </div>
       <div class="main-content-left"> 
           <p class="nametitle titles">Hi,</p>
           <p class="nametitle titles">My name is Ziadoon</p>
           <p class="simpleDesc">“ for me programming is a tool that we use     now, to make our future better ...”</p>
-          <p class="simpleDesc">#junior web developer</p>
-          <button id="letsTalk">Lets talk !</button>
+          <p class="simpleDesc" id="hash">#junior web developer</p>
+          
+           <a id="letsTalk" href="#contactMe">Lets talk !</a>
+        <div id="socialMedia">
+          <a href="#"  class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
         </div>
-    <div class="main-content-right">
-          <img src="assets/img/profilepic.svg" alt="">
+      
 
+        </div>
+  
     </div>
-    </div>
-
+     
+  <!--   <div class="seperator">
+      <span class="dot"></span>
+      <span class="dot-vide"></span>
+    </div> -->
     <div id="portfolio-page">
       <!-- Bjoutik -->
+      <h2 class="shortbio">My projects..</h2> 
+
             <div class="projects-grid" id="bjoutik"> 
               <img class="first-col bjo-grid" src="assets/img/mdi_filter_1.png" alt="">
               <p class="second-col-first bjo-grid">2020</p>
@@ -105,8 +123,7 @@
               <button id="Take-a-look-button">Take a look</button>            
             
             </div>
-         
-
+     
             
             <!-- Recitroc -->
             <div class="projects-grid" id="recitroc"> 
@@ -177,8 +194,14 @@
             
             </div>
           </div>
+               
+      <!--     <div class="seperator">
+            <span class="dot"></span>
+            <span class="dot-vide"></span>
+          </div> -->
+
           <div id="skills-page">
-            <p>Skills</p>
+            <h2 class="shortbio">Skills</h2> 
             <div id="languages"class="grid-skills-lang">
               
               <div class="skills-titles"><p>Langauges & frameworks</p></div>
@@ -226,10 +249,16 @@
             </div> 
 
           </div>
+          <!--END of SECTION  -->
+       <!--  <div class="seperator">
+          <span class="dot"></span>
+          <span class="dot-vide"></span>
+        </div> -->
+          <!--Start of SECTION  -->
+          <div id="about-me">
+            <h2 class="shortbio">Short biography</h2> 
 
-          <div class="about-me">
             <div class="grid-about-me">
-              <p class="shortbio">Short biography</p> 
               <p class="borned">
                 Borned in 1995, raised In baghdad, and
                 i started learning programming in 2019..
@@ -238,10 +267,10 @@
                 I am Ziadoon from Iraq, junior web developer, i live in belgium since 2015
                 Finding solutions for a sepcific probleme\s, creativity
                 and rennovation that what the programming means to me and why i am passionate by.
-
-                I dont like working in stress enviromenet between group members, using only wordpress and other CMS for the whole job time .
-
-                I like working in group, helping others when they find difficulties if i could, learn from others experiences and
+                <br><br>
+                <span id="idontlike">I dont like </span>working in stress enviromenet between group members, using only wordpress and other CMS for the whole job time .
+                <br><br>
+                <span id="ilike">I like </span>working in group, helping others when they find difficulties if i could, learn from others experiences and
                 Take the hard tasks of a project.
               </p>
               <p class="fav-q">
@@ -252,77 +281,105 @@
 
           </div> 
 
-          <div class="contact-me">
-            
+<!--           <div class="seperator">
+            <span class="dot"></span>
+            <span class="dot-vide"></span>
+          </div> -->
 
-      
+          <div class="contact-me" id="contactMe">
+            <h2 class="shortbio">contact-me</h2> 
 
-
+            <div class="container">
+              <form>
+                <ul class="flex-outer">
+                  <li>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name here">
+                  </li>
+                  <li>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name here">
+                  </li>
+                  <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email here">
+                  </li>
+                  <li>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone here">
+                  </li>
+                  <li>
+                    <label for="message">Message</label>
+                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                  </li>
+                 
+                  <li>
+                    <button type="submit">Submit</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
-          <div class="container">
-            <form>
-              <ul class="flex-outer">
-                <li>
-                  <label for="first-name">First Name</label>
-                  <input type="text" id="first-name" placeholder="Enter your first name here">
-                </li>
-                <li>
-                  <label for="last-name">Last Name</label>
-                  <input type="text" id="last-name" placeholder="Enter your last name here">
-                </li>
-                <li>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Enter your email here">
-                </li>
-                <li>
-                  <label for="phone">Phone</label>
-                  <input type="tel" id="phone" placeholder="Enter your phone here">
-                </li>
-                <li>
-                  <label for="message">Message</label>
-                  <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
-                </li>
-               
-                <li>
-                  <button type="submit">Submit</button>
-                </li>
-              </ul>
-            </form>
-          </div>
+          
+          <footer id="footer">
+            <img src="assets/img/logo.svg" alt="">
+            <p class="footer-text">ALOBAIDI Ziadoon @2021</p>
+          </footer>
+
         </div>
       </div>
       
           <script>
-            
+            window.onload = function() {
+              console.log("hello f");
+              document.getElementById("bjoutik").display= "none";
+              document.getElementById("tfog-content").display= 'none';
+              document.getElementById("reci-content").display= 'none';
+              document.getElementById("mira-content").display= 'none';
+              };
             function myFunction() {
               
               var x = document.getElementById("bjoutik-content");
+              var t = document.getElementById("bjoutik");
+
               if (x.style.display === "none") {
                 x.style.display = "grid";
+                t.style.borderBottom = "none";
+
               } else {
                 x.style.display = "none";
+
               }
             }
             function tfogFunction() {
               var t = document.getElementById("tfog-content");
+              var x = document.getElementById("tfog");
               if (t.style.display === "none") {
                 t.style.display = "grid";
+                x.style.borderBottom = "none";
+
               } else {
                 t.style.display = "none";
               }
             }
             function reciFunction() {
               var t = document.getElementById("reci-content");
+              var x = document.getElementById("recitroc");
               if (t.style.display === "none") {
                 t.style.display = "grid";
+                x.style.borderBottom = "none";
+
               } else {
                 t.style.display = "none";
               }
             }
             function miraFunction() {
               var t = document.getElementById("mira-content");
+              var x = document.getElementById("mirabelles");
               if (t.style.display === "none") {
                 t.style.display = "grid";
+                x.style.borderBottom = "none";
+
               } else {
                 t.style.display = "none";
               }

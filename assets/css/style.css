@@ -9,12 +9,163 @@ grid-template-rows: 40% 37% 53%;
  :root {
         --yellow : #ECBD2C ;
 }
+#sidebar-icons-group a:not(:first-child) img{
+margin:40px 2px ;  
+}
+#sidebar-icons-group img:first-child{
+margin:22px 2px ;  
+}
+.main-content-left{
+        width: 90%;
+padding: 8.6% 10%;
+}
+.fa{
+      padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+#socialMedia
+{
+        display: block;
+    margin-top: 7%; 
+}
+.fa-facebook{
+  background: #3B5998;
+  color: white; 
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+#header{
+    display: block;
+}
+#skills-page{
+    /*#161B40 57.37%, #0E122F*/
+              background-color: rgba(31,34,49,0.99);
+}
+#contactMe{
+                  background-color: rgba(31,34,49,0.99);
+
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.25); 
+        padding: 80px 0px;
+}
+.container {
+        width: 80%;
+        max-width: 650px;
+        margin: 0 auto;
+        color: #f2f2f2;
+      }
+
+.simpleDesc {
+        font-family: 'Jura', sans-serif;
+        font-size: 25px;
+        color : #0E122F ;
+
+      }
+
+
+footer p {
+        color: black !important;
+}
+
+footer{
+
+    display: flex;
+    background-color: #e9eae4 ;
+    padding: 20px;
+    justify-content:  center;
+}
+
+ #letsTalk{
+     margin-top: 10px;
+              background-color: rgba(249,249,249,0.04) ;
+              border: solid 2px #ECBD2C !important;
+               font-family: 'Jura', sans-serif;
+     font-weight: bold;
+                font-size: 20px;
+             border-radius: 5px;
+             transition: 0.7s;
+             padding : 10px 30px;
+        text-decoration: none;        
+        color: #c49b1f !important; 
+        }
+  
+      #letsTalk a:visited{
+        text-decoration: none;        
+        color : #ECBD2C !important;   
+      }     
+      #letsTalk:hover {
+              background-color: #ECBD2C;
+         border: none;
+         color: black !important;
+      }
+     
+      #letsTalk a:default  {
+         color: #ECBD2C !important;
+      }
+
+
+
+
+
+
+
+
+
+
+#hash
+{
+    color : #0E122F ;
+}
+.titles {
+        font-family: 'Marcellus SC', serif;
+        font-size: 40px;
+        color : #c69705 ;
+
+      }
+#idontlike{
+        color : #C1121C ;
+}
+#ilike{
+        color : #2D9CDB;
+}
+ .shortbio::before{
+  background-color:white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+#Home-page  img{
+    width: 100%;
+    height: 100%;
+}
+
+      .main-content-right{
+      }
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+
  .sidebar {
         background-color: #F1F1F1 ;
-      width: 4%;
+        border: 2px solid black;
+     width: 4%;
       height: 56vh;
       min-height: 200px;
-      overflow: auto;
+      overflow: visible;
+     
       position: -webkit-sticky;
       position: sticky;
                top: 18%;
@@ -23,20 +174,21 @@ grid-template-rows: 40% 37% 53%;
       
       .main {
               flex-direction :column ;
-      width: 96%;
-      height: 750vh;
-      min-height: 1000px;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
+              width: 96%;
+              height: 650vh;
+              min-height: 1000px;
+              display: -webkit-box;
+              display: flex;
+          margin: 0% 1% 0% 0.6% ;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
             
       }
       
       .main,
       .sidebar {
       color: #222;
-      padding: 15px;
+      padding: 9px;
       
       }
       
@@ -48,8 +200,9 @@ grid-template-rows: 40% 37% 53%;
       }
       
       body {
-     background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+          /*     background-color: #0b0a0a;
+*/
+     background-color: #030a16;
       font-size: 20px;
       box-sizing: border-box;
       font-family: Lato, sans-serif;
@@ -66,41 +219,70 @@ box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
       }
       /* new */
       
-      #sidebar-icons-group{
-           
-      }
-      .sidebar-icons {
-              margin:40px 0px ;  
-      }
-      .simpleDesc {
-        font-family: 'Jura', sans-serif;
-        font-size: 25px;
-      }
-      .titles {
-        font-family: 'Marcellus SC', serif;
-        font-size: 38px;
-        color : #ECBD2C ;
-      }
+     
+     
+  
+     
       #Home-page{
+          border-radius: 10px 10px 0px 0px ; 
+        /*  background-color: #ececec ;*/
+            background-color: #fafdfd ;
               display: flex;
-              padding: 8% 10% ;
+              padding: 0% 10% 0% 0% ;
+              margin: 40px 0px 0px 0px;
       }
-      .main-content-left{
-              width: 50%;
+    #portfolio-page{
+        padding: 10% 40px;
+/*                 background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
+ */          
+                  background-color: rgba(54,61,98,0.69) ;
+
+    }
+
+
+
+
+    .projects-grid{
+          margin-left:4.7% ;
+              background-color: rgba(31,34,49,0.99);
+    margin-bottom: 15px; 
+
+                 font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 90%;
+        height: 250px;
+        grid-template-areas: ". second-col-first third-col-first fourth-col"
+                             "first-col  second-col-second third-col-second fourth-col"
+                             ".  second-col-third . fourth-col";
+        grid-template-rows: 70px 70px 60px ;
+        grid-template-columns: 15% 30% 30% 30% ;
+      
       }
-      .main-content-right{
-              width: 50%;
-      }
-      #letsTalk{
-              margin-top: 20px;
-              background-color: transparent ;
-              border: solid 1px #ECBD2C ;
-              color : #ECBD2C ;
-               font-family: 'Jura', sans-serif;
-                font-size: 20px;
-      padding : 10px 30px;
-             border-radius: 5px;
-      }
+
+
+   
+
+
+
+
+#about-me{
+            background-image: url('9.png') ; 
+            background-repeat: repeat-x;
+            background-position: center;
+
+}
+.grid-about-me{
+    background-color: rgba(0, 0, 0, 0.8); ;    
+}
+.grid-about-me p {
+    filter: blur(-15px);
+    z-index: 999;
+}
+
+   
+     
+
       .first-col{
               padding: 20px 0px;
               grid-area: first-col ;
@@ -137,47 +319,42 @@ padding: 18px 0px;
               grid-area: fourth-col ; 
               
       }
-      .projects-grid{
-                 font-family: 'Jura', sans-serif;
-        font-size: 22px;
-        display: grid;
-
-        width: 100%;
-        height: 250px;
-        grid-template-areas: ". second-col-first third-col-first fourth-col"
-                             "first-col  second-col-second third-col-second fourth-col"
-                             ".  second-col-third . fourth-col";
-        grid-template-rows: 70px 70px 60px ;
-        grid-template-columns: 15% 30% 30% 30% ;
       
-      }
+
+ 
       #tfog{
                  font-family: 'Jura', sans-serif;
         font-size: 22px;
         display: grid;
-
-        width: 100%;
         height: 250px;
         grid-template-areas: ". second-col-first third-col-first fourth-col"
                              "first-col  second-col-second third-col-second fourth-col"
                              ".  second-col-third third-col-third  fourth-col";
         grid-template-rows: 70px 70px 60px ;
         grid-template-columns: 15% 30% 30% 30% ;
-      
+
       }
+      /* new */
+
+* {
+        box-sizing: border-box;
+      }
+ 
+      
+      /* Position text in the middle of the page/image */
+ 
+   /*  */
       #recitroc{
                  font-family: 'Jura', sans-serif;
         font-size: 22px;
         display: grid;
-
-        width: 100%;
         height: 250px;
         grid-template-areas: ". second-col-first third-col-first fourth-col"
                              "first-col  second-col-second third-col-second fourth-col"
                              ".  second-col-third third-col-third  fourth-col";
         grid-template-rows: 70px 70px 60px ;
         grid-template-columns: 15% 30% 30% 30% ;
-      
+
       }
       .desc{
               grid-area: desc;
@@ -272,6 +449,7 @@ padding: 18px 0px;
         grid-area: js;
 }
 
+
 #Take-a-look-button{
         background-color: var(--yellow);
         border: none ;
@@ -361,7 +539,9 @@ padding: 18px 0px;
         grid-area: skill-two-icon;
 }
 .shortbio{
+        font-family: 'Marcellus SC', serif;
         grid-area : shortbio;
+    color: white;
 }
 .borned{
         grid-area : borned;
@@ -372,6 +552,7 @@ padding: 18px 0px;
 .fav-q{
         grid-area : fav-q;
 }
+
 .grid-skills-tools{
 
         color :white;
@@ -448,12 +629,7 @@ padding: 18px 0px;
         padding: 10px 10%;  
         margin: 5% 0%;
 }
-.container {
-        width: 80%;
-        max-width: 650px;
-        margin: 0 auto;
-        color: #f2f2f2;
-      }
+
       
       .container * {
         box-sizing: border-box;
@@ -529,3 +705,25 @@ padding: 18px 0px;
       .flex-inner li {
         width: 100px;
       }
+.borned{
+        color: #ECBD2C;
+        font-size: 31px;
+}
+.dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dot-vide{
+        height: 15px;
+        width: 15px;
+        border : 3px solid;
+        border-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+}
+.seperator{
+        align-self: center;
+}
