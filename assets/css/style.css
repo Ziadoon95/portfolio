@@ -18,6 +18,10 @@ margin:40px 2px ;
 #sidebar-icons-group img:first-child{
 margin:22px 2px ;  
 }
+.sidebar-icons:hover{
+        cursor: pointer;
+        filter:  drop-shadow(1px 1px 1px beige) invert(75%);
+}
 .main-content-left{
         width: 90%;
 padding: 8.6% 10%;
@@ -30,6 +34,14 @@ padding: 8.6% 10%;
   text-decoration: none;
   margin: 5px 2px;
 }
+.fa-linkedin:hover{
+        background: #085d8d;
+}
+
+.fa-facebook:hover{
+        background: #3c5077;
+}
+
 #socialMedia
 {
         display: block;
@@ -251,7 +263,7 @@ h1:before {
               margin: 40px 0px 0px 0px;
       }
     .portfolio-page{
-        padding: 10% 40px;
+        padding: 10% 40px 5% 40px;
 /*                 background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
  */          
                   background-color: rgba(54,61,98,0.69) ;
@@ -260,7 +272,10 @@ h1:before {
     }
 
 
-
+.projects-grid img:hover{
+        filter: invert(0.7);
+        cursor: pointer;
+}
 
     .projects-grid{
           margin-left:4.7% ;
@@ -761,4 +776,8 @@ padding: 18px 0px;
 }
 .seperator{
         align-self: center;
+}
+#projects-buttons{
+        z-index: 999;
+        animation: none !important;
 }
