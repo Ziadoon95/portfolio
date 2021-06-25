@@ -7,10 +7,17 @@ grid-template-rows: 40% 37% 53%;
 
  */
  .projects-grid{
-background-color: #20363a;
+   background-color: #243c3a;
+background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
 
 
 }
+  .main,
+      .sidebar {
+      color: #ece5e5;
+      padding: 9px;
+      
+      }
 #Home-page{
      background-color: #243c3a;
 background-image: linear-gradient(315deg, #20363a 9%, #1b1138 70%);
@@ -389,12 +396,7 @@ h1:before {
       }
       
   
-      .main,
-      .sidebar {
-      color: #222;
-      padding: 9px;
-      
-      }
+    
       
       .wrapper {
       display: -webkit-box;
@@ -574,7 +576,6 @@ padding: 18px 0px;
 
 .grid-contents{
 
-        color :rgb(5, 10, 31);
         font-family: 'Jura', sans-serif;
         font-size: 22px;
         display: grid;
