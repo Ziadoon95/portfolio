@@ -47,9 +47,12 @@ grid-template-rows: 40% 37% 53%;
    
 }
 footer {
-    background-color: ;
-       
+    background-color: rgba(24,26,32,0.99)!important;       
    
+}
+.footer-text {
+        color : wheat !important;
+
 }
     .main {
         flex-direction :column ;
