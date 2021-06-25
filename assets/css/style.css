@@ -6,6 +6,65 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+ #projects-buttons{
+margin: auto;
+     width : 10%;
+     margin-bottom: 50px
+}
+.biopro{
+    margin: 70px 0px
+    }
+ .projects-grid{
+     margin: auto;
+       margin-bottom: 15px; 
+
+            background-color: rgba(31,34,49,0.99);
+
+               font-family: 'Jura', sans-serif;
+      font-size: 22px;
+      display: grid;
+      width: 90%;
+      height: 250px;
+      grid-template-areas: ". second-col-first third-col-first fourth-col"
+                           "first-col  second-col-second third-col-second fourth-col"
+                           ".  second-col-third . fourth-col";
+      grid-template-rows: 70px 70px 60px ;
+      grid-template-columns: 15% 30% 30% 30% ;
+    
+    }
+ .portfolio-page{
+        
+/*                 background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
+          
+                  background-color: rgba(54,61,98,0.69) ;*/ 
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+    }
+
+
+#gridaboutme{
+    margin-top: 80px;
+}
+ .grid-about-me{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 60%;
+        padding : 10px 10px;
+        margin:auto ;
+        height: 700px;
+        grid-template-areas: 
+                ". shortbio ."
+                ". borned ."
+                ". about-me-desc ."
+                ". fav-q ."
+                      ;
+          grid-template-rows: 4% 20% 52% 24%   ;
+        grid-template-columns: 20% 64% 22% ; 
+        margin-bottom: 8%; 
+        }
 #skills-page{
     padding-top:80px ;
 }
@@ -242,7 +301,7 @@ h1:before {
       .main {
               flex-direction :column ;
               width: 96%;
-              height: 650vh;
+              height: 518vh;
               min-height: 1000px;
               display: -webkit-box;
               display: flex;
@@ -298,14 +357,7 @@ h1:before {
               padding: 0% 10% 0% 0% ;
               margin: 40px 0px 0px 0px;
       }
-    .portfolio-page{
-        padding: 10% 40px 5% 40px;
-/*                 background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
- */          
-                  background-color: rgba(54,61,98,0.69) ;
-                  animation-name: fade;
-                  animation-duration: 1.5s;
-    }
+ 
 
 
 .projects-grid img:hover{
@@ -313,23 +365,7 @@ h1:before {
         cursor: pointer;
 }
 
-    .projects-grid{
-          margin-left:4.7% ;
-              background-color: rgba(31,34,49,0.99);
-    margin-bottom: 15px; 
 
-                 font-family: 'Jura', sans-serif;
-        font-size: 22px;
-        display: grid;
-        width: 90%;
-        height: 250px;
-        grid-template-areas: ". second-col-first third-col-first fourth-col"
-                             "first-col  second-col-second third-col-second fourth-col"
-                             ".  second-col-third . fourth-col";
-        grid-template-rows: 70px 70px 60px ;
-        grid-template-columns: 15% 30% 30% 30% ;
-      
-      }
 
 
    
@@ -664,26 +700,7 @@ padding: 18px 0px;
         margin-bottom: 10%; 
         }
 
-.grid-about-me{
 
-        color :white;
-        font-family: 'Jura', sans-serif;
-        font-size: 22px;
-        display: grid;
-        width: 70%;
-        padding : 10px 0px 0px 10px;
-        margin:0% 10% ;
-        height: 700px;
-        grid-template-areas: 
-                ". shortbio ."
-                ". borned ."
-                ". about-me-desc ."
-                ". fav-q ."
-                      ;
-          grid-template-rows: 10% 20% 50% 20%  ;
-        grid-template-columns: 22% 64% 22% ; 
-        margin-bottom: 10%; 
-        }
 
 .contact-content {
         grid-area: c-c;
@@ -800,8 +817,4 @@ padding: 18px 0px;
 }
 .seperator{
         align-self: center;
-}
-#projects-buttons{
-        z-index: 999;
-        animation: none !important;
 }
