@@ -6,6 +6,9 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+ html {
+        scroll-behavior: smooth;
+      }
  :root {
         --yellow : #ECBD2C ;
 }
@@ -108,9 +111,25 @@ footer{
       #letsTalk a:default  {
          color: #ECBD2C !important;
       }
+/* new */
+#tom{
+        text-decoration: none;
+        color: #3B5998!important;
 
+}
+      #tom:visited{
+        text-decoration: none;        
+        color: #3B5998!important;
+      }     
+      #tom:hover {
+        color: #ECBD2C !important;
+}
+     
+#tom:default  {
+         color: #ECBD2C !important;
+      }
 
-
+/* new */
 
 
 
