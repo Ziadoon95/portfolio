@@ -6,6 +6,41 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+#skills-page{
+    padding-top:80px ;
+}
+
+#languages, #tools{
+    margin-left:auto;
+}
+
+.c-lang{
+    align-self:top ;    
+}
+.grid-skills-lang{
+
+        color :white;
+        font-family: 'Jura', sans-serif;
+        font-size: 22px;
+        display: grid;
+        width: 70%;
+        padding : 10px 0px 0px 10px;
+        margin:0% 10% ;
+        height: 250px;
+        grid-template-areas: 
+                "skill-lang-icon  skills-titles skills-titles skills-titles .  . . . . . "
+                "html html css css js js php php . ."
+                "c c laravel laravel . . . . . ."
+                      ;
+          grid-template-rows: 35% 65%  ;
+        grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+        margin-bottom: 10%; 
+        }
+        
+ #tools div:not(:nth-child(2)) img:hover , #languages div:not(:nth-child(2)) img:hover{
+        filter : invert(0.2);
+    }
+    
  html {
         scroll-behavior: smooth;
       }
@@ -151,6 +186,7 @@ footer{
 
 #hash
 {
+
     color : #0E122F ;
 }
 .titles {
@@ -480,6 +516,10 @@ padding: 18px 0px;
 .figma {
         grid-area : figma ;
 }
+.c-lang{
+        grid-area : c;
+
+}
 .gns3 {
         grid-area : gns3;
 }
@@ -602,7 +642,9 @@ padding: 18px 0px;
 .fav-q{
         grid-area : fav-q;
 }
-
+.c-lang{
+    margin-left: 28px; 
+}
 .grid-skills-tools{
 
         color :white;
@@ -622,24 +664,6 @@ padding: 18px 0px;
         margin-bottom: 10%; 
         }
 
-.grid-skills-lang{
-
-        color :white;
-        font-family: 'Jura', sans-serif;
-        font-size: 22px;
-        display: grid;
-        width: 70%;
-        padding : 10px 0px 0px 10px;
-        margin:0% 10% ;
-        height: 250px;
-        grid-template-areas: 
-                "skill-lang-icon  skills-titles skills-titles skills-titles .  . . . . . "
-                "html html css css js js php php laravel laravel"
-                      ;
-          grid-template-rows: 35% 65%  ;
-        grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
-        margin-bottom: 10%; 
-        }
 .grid-about-me{
 
         color :white;
