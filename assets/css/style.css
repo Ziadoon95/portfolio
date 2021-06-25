@@ -6,14 +6,25 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+ .projects-grid{
+background-color: #20363a;
 
+
+}
+#Home-page{
+     background-color: #243c3a;
+background-image: linear-gradient(315deg, #20363a 9%, #1b1138 70%);
+    /*       background-color:rgba(24,26,32,0.99)!important;
+*/
+}
  body {
         /*     background-color: #030a16;#576377
 
    background-color:#ececec;*/
+     background-color: #243c3a;
+background-image: linear-gradient(270deg,#0d2229 10%, rgb(16,3,17) 40%);
 
-background-color: #243c3a;
-background-image: linear-gradient(315deg, #5a7372 9%, #1e1536 70%);
+
 
      font-size: 20px;
     box-sizing: border-box;
@@ -43,12 +54,7 @@ background-image: linear-gradient(315deg, #5a7372 9%, #1e1536 70%);
 }
 
 
-#Home-page{
-     background-color: #243c3a;
-background-image: linear-gradient(315deg, #20363a 9%, #1b1138 70%);
-    /*       background-color:rgba(24,26,32,0.99)!important;
-*/
-}
+
 .sidebar {
          filter: drop-shadow(0 0 0.2rem rgb(14,17,62));
    
@@ -136,7 +142,7 @@ margin: auto;
      margin: auto;
        margin-bottom: 15px; 
 
-            background-color: rgba(31,34,49,0.99);
+            /*background-color: rgba(31,34,49,0.99);*/
 
                font-family: 'Jura', sans-serif;
       font-size: 22px;
