@@ -94,11 +94,11 @@
       <!-- Bjoutik -->
       <h2 class="shortbio">My projects..</h2> 
             <!-- Candy-crush-->
-            <div class="projects-grid" id="bjoutik"> 
+            <div class="projects-grid" id="candy"> 
               <img class="first-col bjo-grid" src="assets/img/mdi_filter_1.png" alt="">
               <p class="second-col-first bjo-grid">2021</p>
               <p class="second-col-second bjo-grid">Candy crush</p>
-              <img onclick="myFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+              <img onclick="candyFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
       
               <p class="third-col-first bjo-grid">Project</p>
               <p class="third-col-second bjo-grid">Saint-Laurent</p>
@@ -106,7 +106,7 @@
               <img src="assets/img/bjoutika-mocup.png" class="fourth-col bjo-grid" width="100px">
             </div>
           <!-- Candy-crush- content-->
-            <div id="bjoutik-content"class="grid-contents">
+            <div id="candy-content"class="grid-contents">
               <p class="date-project">11/2020</p>
               <div class="desc">Description</div>
               <div class="techAndRole">Technologie utilisé</div>
@@ -188,7 +188,7 @@
                 <div class="desc">Description</div>
                 <div class="techAndRole">Technologie utilisé</div>
                 <div class="moNrole">Mon role</div>
-                <div class="bjoutik-description">: Bjoutik, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
+                <div class="bjoutik-description">: recitroc, est un site vitrine pour un salon de beauté et de soin, ce projet est realisé dans le cadre de la fin d’année à Sirius 2020
                   en equipe de 4 personnes, intergrateurs et desgineurs :</div>
                 <div class="names">
                 
@@ -209,9 +209,6 @@
 
           </div>
 
-
-          <button id="prev-btn">prev</button>
-          <button id="next-btn">next</button>
 
 
 
@@ -263,11 +260,11 @@
       <!-- Bjoutik -->
       <h2 class="shortbio">My projects..</h2> 
 
-            <div class="projects-grid" id="bjoutik"> 
+            <div class="projects-grid" id="os"> 
               <img class="first-col bjo-grid" src="assets/img/mdi_filter_1.png" alt="">
               <p class="second-col-first bjo-grid">2020</p>
               <p class="second-col-second bjo-grid">VM OS Projet</p>
-              <img onclick="myFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
+              <img onclick="osFunction()" src="assets/img/mdi_play_circle_filled(1).png" class="second-col-third bjo-grid" width="50px">
       
               <p class="third-col-first bjo-grid">Project</p>
               <p class="third-col-second bjo-grid">Saint-Laurent</p>
@@ -275,7 +272,7 @@
               <img src="assets/img/bjoutika-mocup.png" class="fourth-col bjo-grid" width="100px">
             </div>
             <!-- Bjoutik scroll content-->
-            <div id="bjoutik-content"class="grid-contents">
+            <div id="os-content"class="grid-contents">
               <p class="date-project">11/2020</p>
               <div class="desc">Description</div>
               <div class="techAndRole">Technologie utilisé</div>
@@ -376,15 +373,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
+          <div id="projects-buttons">
+            <button id="next-btn" onclick="next_button()">next</button>
+          </div>
+                
 
 
 
@@ -548,13 +540,45 @@
       </div>
       
           <script>
+
+            var projets_display_1 = document.getElementById("projets-1").style.display;
+            var projets_display_2 = document.getElementById("projets-2").style.display;
+
             window.onload = function() {
               console.log("hello f");
-              document.getElementById("bjoutik").display= "none";
-              document.getElementById("tfog-content").display= 'none';
-              document.getElementById("reci-content").display= 'none';
-              document.getElementById("mira-content").display= 'none';
+              document.getElementById("projets-2").style.display= "none";
+              document.getElementById("projets-1").style.display= "block";
+
+              document.getElementById("bjoutik-content").style.display= "none";
+              document.getElementById("tfog-content").style.display= "none";
+              document.getElementById("mira-content").style.display= "none";
+              document.getElementById("reci-content").style.display= "none";
+              document.getElementById("os-content").style.display= "none";
+              document.getElementById("candy-content").style.display= "none";
               };
+
+
+              function next_button()
+            {
+
+              if(document.getElementById("projets-2").style.display=="none")
+              {
+                document.getElementById("projets-1").style.display="none"
+                document.getElementById("projets-2").style.display = "block"
+
+              }
+              else{
+                    document.getElementById("projets-2").style.display="none"
+                    document.getElementById("projets-1").style.display="block"
+
+              }
+            }
+
+
+
+
+
+
             function myFunction() {
               
               var x = document.getElementById("bjoutik-content");
@@ -602,12 +626,35 @@
                 t.style.display = "none";
               }
             }
+            function candyFunction() {
+              var t = document.getElementById("candy-content");
+              var x = document.getElementById("candy");
+              if (t.style.display === "none") {
+                t.style.display = "grid";
+                x.style.borderBottom = "none";
+
+              } else {
+                t.style.display = "none";
+              }
+            }
+            function osFunction() {
+              var t = document.getElementById("os-content");
+              var x = document.getElementById("os");
+              if (t.style.display === "none") {
+                t.style.display = "grid";
+                x.style.borderBottom = "none";
+
+              } else {
+                t.style.display = "none";
+              }
+            }
+
+
+//.style.display= "none";
 
 
 
-           
-      
-      
+          
       
   </script> 
 

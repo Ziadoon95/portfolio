@@ -255,7 +255,8 @@ h1:before {
 /*                 background: radial-gradient(50% 50% at 50% 50%, #161B40 57.37%, #0E122F 100%);
  */          
                   background-color: rgba(54,61,98,0.69) ;
-
+                  animation-name: fade;
+                  animation-duration: 1.5s;
     }
 
 
@@ -338,8 +339,11 @@ padding: 18px 0px;
               grid-area: fourth-col ; 
               
       }
-      
-
+     
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
  
       #tfog{
                  font-family: 'Jura', sans-serif;
@@ -410,6 +414,18 @@ padding: 18px 0px;
 }
       .bjo-grid{
                 justify-self: center;
+}
+#next-btn{
+        border : none;
+        font-size: 35px;
+        padding: 10px;
+        background-color: transparent;
+        color : white;
+        text-align: center;
+}
+#next-btn:hover{
+        color : rgb(231, 216, 4);
+        cursor: pointer;
 }
 .grid-contents{
 
