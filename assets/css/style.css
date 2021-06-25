@@ -9,9 +9,13 @@ grid-template-rows: 40% 37% 53%;
 
  body {
         /*     background-color: #030a16;#576377
-*/
-   background-color:#ececec;
-    font-size: 20px;
+
+   background-color:#ececec;*/
+
+background-color: #243c3a;
+background-image: linear-gradient(315deg, #5a7372 9%, #1e1536 70%);
+
+     font-size: 20px;
     box-sizing: border-box;
     font-family: Lato, sans-serif;
     margin: 0px;
@@ -40,7 +44,10 @@ grid-template-rows: 40% 37% 53%;
 
 
 #Home-page{
-       background-color:rgba(24,26,32,0.99)!important;
+     background-color: #243c3a;
+background-image: linear-gradient(315deg, #20363a 9%, #1b1138 70%);
+    /*       background-color:rgba(24,26,32,0.99)!important;
+*/
 }
 .sidebar {
          filter: drop-shadow(0 0 0.2rem rgb(14,17,62));
