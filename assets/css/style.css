@@ -6,6 +6,31 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+
+.Take-a-look-button{
+        border: 2px solid var(--yellow) ;
+        height: max-content;
+        justify-self: end;
+        padding: 10px 18px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--yellow) ;
+    border-radius: 5px;
+            background-color: transparent;
+        grid-area: take-a-look-button;
+        /*width: 40%;*/
+}
+.Take-a-look-button:hover {
+        background-color: var(--yellow);
+        cursor: pointer;
+    color : black;
+        border: 2px solid var(--yellow) ;
+        /*width: 40%;*/
+}
+#Take-a-look-button a:visited {    
+    color : var(--yellow);
+     
+}
  .projects-grid{
    background-color: #243c3a;
 background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
@@ -655,15 +680,6 @@ padding: 18px 0px;
 }
 
 
-#Take-a-look-button{
-        background-color: var(--yellow);
-        border: none ;
-        height: max-content;
-        justify-self: end;
-        padding: 10px 20px;
-        grid-area: take-a-look-button;
-        /*width: 40%;*/
-}
 .nameone, .nametwo , .namethird {
         background-color: #1D1D1D;
 }
