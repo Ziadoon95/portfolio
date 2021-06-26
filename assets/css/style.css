@@ -26,8 +26,7 @@ grid-template-rows: 40% 37% 53%;
 }
 .flex-outer li:last-child button:hover{
     background-color: var(--color3);
-    color: black ;
-    cursor: pointer;
+    color
 }
 footer > img {
     width: 50px;
@@ -514,10 +513,6 @@ h1:before {
  
 
 
-.projects-grid img:hover{
-        filter: invert(0.7);
-        cursor: pointer;
-}
 
 
 
