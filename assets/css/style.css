@@ -750,6 +750,7 @@ padding: 18px 0px;
 }
 .borned{
         grid-area : borned;
+        color : var(--yellow) !important;
 }
 .about-me-desc{
         grid-area : about-me-desc;
