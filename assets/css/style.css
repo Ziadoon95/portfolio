@@ -6,6 +6,50 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+ .projects-grid{
+     margin: auto;
+       margin-bottom: 15px; 
+        font-family: 'Jura', sans-serif;
+      font-size: 22px;
+      display: grid;
+      width: 90%;
+      height: 250px;
+      grid-template-areas: ". second-col-first third-col-first fourth-col"
+                           "first-col  second-col-second third-col-second fourth-col"
+                           ".  second-col-third . fourth-col";
+      grid-template-rows: 30% 22% 30% ;
+      grid-template-columns: 15% 30% 30% 30% ;
+    
+    }
+:root{
+    --color3 : #C6CA07;
+}
+.flex-outer li:last-child button:hover{
+    background-color: var(--color3);
+    color: black ;
+    cursor: pointer;
+}
+footer > img {
+    width: 50px;
+}
+ .projects-grid{
+    background-color: #243c3a;
+    background-image: linear-gradient(315deg, #1E2130 60%, #222927 40%);
+
+}
+.newwrappers{
+    justify-self: center;
+    justify-content:  center;
+}
+.newwrappers-content{
+        border-radius: 50%;
+    font-size: 20px;
+    height: 39px;
+line-height: 39px;
+    color: #C6CA07 ;
+        padding:  0px  8px;
+transition-delay:  2s;
+}
 
 .Take-a-look-button{
         border: 2px solid var(--yellow) ;
@@ -31,12 +75,7 @@ grid-template-rows: 40% 37% 53%;
     color : var(--yellow);
      
 }
- .projects-grid{
-   background-color: #243c3a;
-background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
 
-
-}
 .biopro{
     color : rgb(219,219,219) !important;
         margin: 70px 0px
@@ -44,13 +83,14 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
 .titles {
         font-family: 'Marcellus SC', serif;
         font-size: 40px;
-        color : #c6ca08 ;
+        color : var(--color3)  ;
 
       }
+
 #letsTalk{
         margin-top: 10px;
                  background-color: rgba(249,249,249,0.04) ;
-                 border: solid 2px #c6ca08 !important;
+                 border: solid 2px var(--color3)  !important;
                   font-family: 'Jura', sans-serif;
         font-weight: bold;
                    font-size: 20px;
@@ -58,7 +98,7 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
                 transition: 0.7s;
                 padding : 10px 30px;
            text-decoration: none;        
-           color: #c6ca08 !important; 
+           color: var(--color3) !important; /*334434*/
            }
     /* #letsTalk{
         margin-top: 10px;
@@ -83,8 +123,7 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
            color : #ECBD2C !important;   
          }     
          #letsTalk:hover {
-                 background-color: #c6ca08;
-            border: none !important;
+                 background-color: var(--color3) ;
             color: black !important;
          }
         
@@ -168,21 +207,22 @@ footer {
 }
 
  #next-btn{
-        border : none;
         font-size: 35px;
+     background-color: transparent !important;
         padding: 10px;
-           color: #a07b0b !important; 
+           color: var(--yellow) !important; 
         text-align: center;
-                 font-size: 20px;
-                border-radius: 5px;
+                 font-size: 24px;
+                border-radius: 1%;
                 transition: 0.7s;
                 padding : 10px 20px;
-                      border: none !important;
+     border : none ;
 }
 #next-btn:hover{
-    color :black !important;
+    color : rgba(70,102,78,0.99) !important;
     background-color: wheat;
     cursor: pointer;
+    border:  none !important;
 }
 
 
@@ -199,19 +239,16 @@ margin: auto;
  .projects-grid{
      margin: auto;
        margin-bottom: 15px; 
-
-            /*background-color: rgba(31,34,49,0.99);*/
-
-               font-family: 'Jura', sans-serif;
+        font-family: 'Jura', sans-serif;
       font-size: 22px;
       display: grid;
       width: 90%;
       height: 250px;
-      grid-template-areas: ". second-col-first third-col-first fourth-col"
+     /* grid-template-areas: ". second-col-first third-col-first fourth-col"
                            "first-col  second-col-second third-col-second fourth-col"
                            ".  second-col-third . fourth-col";
       grid-template-rows: 70px 70px 60px ;
-      grid-template-columns: 15% 30% 30% 30% ;
+      grid-template-columns: 15% 30% 30% 30% ;*/
     
     }
  .portfolio-page{
@@ -287,6 +324,7 @@ margin: auto;
       }
  :root {
         --yellow : #c6ca08 ;
+        --color2 :#334434;
 }
 #sidebar-icons-group a:not(:first-child) img{
 margin:40px 2px ;  
@@ -526,7 +564,6 @@ h1:before {
       .third-col-first {
               grid-area: third-col-first ; 
 padding: 18px 0px;
-              color: var(--yellow);
                  font-family: 'Marcellus SC', serif;
 }
       .third-col-second {
@@ -570,6 +607,9 @@ padding: 18px 0px;
       /* Position text in the middle of the page/image */
  
    /*  */
+   .newwrappers-content{
+           cursor: pointer;
+   }
       #recitroc{
                  font-family: 'Jura', sans-serif;
         font-size: 22px;
