@@ -12,17 +12,20 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
 
 
 }
-
+.biopro{
+    color : rgb(219,219,219) !important;
+        margin: 70px 0px
+        }
 .titles {
         font-family: 'Marcellus SC', serif;
         font-size: 40px;
-        color : #26a4b9 ;
+        color : #c6ca08 ;
 
       }
 #letsTalk{
         margin-top: 10px;
                  background-color: rgba(249,249,249,0.04) ;
-                 border: solid 2px #26a4b9 !important;
+                 border: solid 2px #c6ca08 !important;
                   font-family: 'Jura', sans-serif;
         font-weight: bold;
                    font-size: 20px;
@@ -30,7 +33,7 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
                 transition: 0.7s;
                 padding : 10px 30px;
            text-decoration: none;        
-           color: #26a4b9 !important; 
+           color: #c6ca08 !important; 
            }
     /* #letsTalk{
         margin-top: 10px;
@@ -55,7 +58,7 @@ background-image: linear-gradient(315deg, #1E2130 60%, #16141e 40%);
            color : #ECBD2C !important;   
          }     
          #letsTalk:hover {
-                 background-color: #26a4b9;
+                 background-color: #c6ca08;
             border: none !important;
             color: black !important;
          }
@@ -167,9 +170,7 @@ margin: auto;
      width : 10%;
      margin-bottom: 50px
 }
-.biopro{
-    margin: 70px 0px
-    }
+
  .projects-grid{
      margin: auto;
        margin-bottom: 15px; 
@@ -260,7 +261,7 @@ margin: auto;
         scroll-behavior: smooth;
       }
  :root {
-        --yellow : #ECBD2C ;
+        --yellow : #c6ca08 ;
 }
 #sidebar-icons-group a:not(:first-child) img{
 margin:40px 2px ;  
