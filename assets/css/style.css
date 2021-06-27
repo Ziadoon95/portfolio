@@ -1,11 +1,4 @@
 
-    /*
-grid-template-columns: 25% 75%;
-grid-template-rows: 40% 37% 53%;
-*/
-/*   padding: 10px;
-
- */
 #cv {
     margin-left: 5px;
     color : #089cbe ;
@@ -23,6 +16,14 @@ grid-template-rows: 40% 37% 53%;
  .overlay{
         display: none;
 }
+@media screen and  (max-width: 893px){
+         .grid-contents{
+         grid-template-rows: 20% 50% 25% !important;
+         grid-template-columns : 30% 55% 30% !important;
+             margin-bottom: 120px!important;
+     }
+} 
+
 @media screen and (min-width: 1600px)and (max-width: 2000px) 
 {
     .sidebar {
@@ -76,7 +77,7 @@ grid-template-rows: 40% 37% 53%;
         padding:0px !important ;
     }
 }
- @media screen and (max-width: 1127px) {
+ @media screen and (max-width: 1127px)and (min-width: 894px) {
      .grid-contents{
          grid-template-rows: 20% 60% 5% !important;
          grid-template-columns : 30% 55% 30% !important;
@@ -249,7 +250,7 @@ grid-template-rows: 40% 37% 53%;
 }
 .flex-outer li:last-child button:hover{
     background-color: var(--color3);
-    
+    cursor: pointer;
 }
 footer > img {
     width: 50px;
