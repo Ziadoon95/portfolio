@@ -10,6 +10,35 @@ grid-template-rows: 40% 37% 53%;
         display: none;
 }
  @media screen and (max-width: 1000px) {
+        .grid-skills-tools{
+
+                grid-template-areas: 
+                        "skill-two-icon tools-titles tools-titles tools-titles  tools-titles . . . . ."
+                        "github github vim vim figma figma gns3 gns3 . ."
+                           !important   ;
+                  grid-template-rows: 35% 65%   ;
+                grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+                }
+        .grid-skills-lang{
+            margin-bottom: 150px !important; 
+                    
+ 
+                }
+         .skills-titles p , .tools-titles p{
+            margin-left: 15px;     
+         }
+     #gridaboutme{
+         padding: 0 !important;
+         width: 95% 
+     }
+     .main{
+         padding: 0% 0% 0% 1%  !important ;
+         margin: 0% !important ;
+         width: 99% !important;
+     }
+         .main-content-left p:first-child{
+                 display: none;
+         }
      #Home-page  img{
     position: relative !important;
          bottom: 0px !important;
@@ -20,7 +49,10 @@ grid-template-rows: 40% 37% 53%;
             
             }
         #main-content-right{
-            width: 40% !important;
+        }
+        .main-content-left{
+                width: 100% !important;
+                padding: 1.7% 0px !important;
         }
          #Home-page{
                  padding:2px 60px 5px 2px !important;
@@ -28,9 +60,7 @@ grid-template-rows: 40% 37% 53%;
         .titles{
                 font-size: 35px !important;
         }
-         .main-content-left{
-                 padding: 0 !important;
-         }
+     
 .sidebar{
         display: none;
 }
@@ -57,7 +87,7 @@ grid-template-rows: 40% 37% 53%;
             height: 100%;
             width: 0;
             position: fixed;
-            z-index: 1;
+            z-index: 999;
             top: 0;
             left: 0;
             background-color: rgb(40,48,81);
@@ -421,7 +451,7 @@ margin: auto;
         margin:0% 10% ;
         height: 250px;
         grid-template-areas: 
-                "skill-lang-icon  skills-titles skills-titles skills-titles .  . . . . . "
+                "skill-lang-icon  skills-titles skills-titles skills-titles skills-titles  . . . . . "
                 "html html css css js js php php . ."
                 "c c laravel laravel . . . . . ."
                       ;
@@ -562,8 +592,7 @@ footer{
 
 }
 
-      .main-content-right{
-      }
+
 
 h1:before {
   right: 0.5em;
