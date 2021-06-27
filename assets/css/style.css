@@ -18,6 +18,9 @@
         display: none;
 }
 @media screen and  (max-width: 893px){
+    #cv {
+    font-size: 18px !important;
+}
          .grid-contents{
          grid-template-rows: 20% 50% 25% !important;
          grid-template-columns : 30% 55% 30% !important;
