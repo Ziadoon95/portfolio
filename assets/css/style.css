@@ -6,6 +6,44 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+.nav-hide{
+    font-size: 16px;
+}
+.sidebar {
+        color: #ece5e5;
+        padding: 1px;
+
+        
+        }
+#sidebar-icons-group a{
+        padding:  0px 5px ;  
+    text-decoration: none ;
+    color : #1E2130;
+        }
+#sidebar-icons-group a span{
+    display: block;
+    
+        margin: 0px 0px 40px 0px !important ;  
+    text-align: center;
+        }
+#sidebar-icons-group a:first-child span{
+        margin-bottom:  50px !important ;  
+        }
+
+#sidebar-icons-group a:first-child img{
+        margin-top:  15px !important ;  
+    
+        }
+        #sidebar-icons-group img:first-child{
+
+                }
+                .sidebar-icons:hover{
+                        cursor: pointer;
+                        filter:  drop-shadow(1px 1px 1px beige) invert(75%);
+                }
+                #sidebar-icons-group a:hover {
+                        color :rgba(47, 49, 54, 0.8)
+                }
  .projects-grid{
      margin: auto;
        margin-bottom: 15px; 
@@ -26,7 +64,7 @@ grid-template-rows: 40% 37% 53%;
 }
 .flex-outer li:last-child button:hover{
     background-color: var(--color3);
-    color
+    
 }
 footer > img {
     width: 50px;
@@ -132,11 +170,7 @@ transition-delay:  2s;
 
 
   .main,
-      .sidebar {
-      color: #ece5e5;
-      padding: 9px;
-      
-      }
+
 #Home-page{
      background-color: #243c3a;
 background-image: linear-gradient(315deg, #20363a 9%, #1b1138 60%);
@@ -325,16 +359,8 @@ margin: auto;
         --yellow : #c6ca08 ;
         --color2 :#334434;
 }
-#sidebar-icons-group a:not(:first-child) img{
-margin:40px 2px ;  
-}
-#sidebar-icons-group img:first-child{
-margin:22px 2px ;  
-}
-.sidebar-icons:hover{
-        cursor: pointer;
-        filter:  drop-shadow(1px 1px 1px beige) invert(75%);
-}
+
+
 .main-content-left{
         width: 90%;
 padding: 8.6% 10%;
