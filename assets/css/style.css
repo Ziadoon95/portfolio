@@ -101,7 +101,7 @@ grid-template-rows: 40% 37% 53%;
         }
      
 .sidebar{
-        display: none;
+        display: none !important;
 }
 .overlay{
         display: block;
@@ -118,6 +118,7 @@ grid-template-rows: 40% 37% 53%;
         padding : 20px;
         position: -webkit-sticky;
         top: 0; 
+    text-align: end;
     }
      .overlay {
             height: 100%;
