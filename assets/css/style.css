@@ -6,8 +6,46 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+ .nav-hide{
+        font-size: 16px;
+    }
+.sidebar-icons{
+}
  .overlay{
         display: none;
+}
+@media screen and (min-width: 1600px)and (max-width: 2000px) 
+{
+    .sidebar {
+        height: 100% !important;
+    }
+    #sidebar-icons-group a{
+        padding: 5x !important;
+    }    
+    #sidebar-icons-group a span{
+                border-radius: 7% ;
+                    background-color: rgb(255,255,255) !important;
+    }
+    #sidebar-icons-group a:nth-child(1){
+        padding: 5px !important;
+        
+    }
+}
+
+@media screen and (min-width: 1463px)and (max-width: 1600px) 
+{
+    .sidebar {
+        height: 100% !important;
+    }
+    #sidebar-icons-group a{
+        padding: 0px !important;
+    }
+    #sidebar-icons-group a:nth-child(1){
+        padding: 5px !important;
+    }
+        #sidebar-icons-group a {
+        padding:0px !important ;
+    }
 }
  @media screen and (max-width: 1000px) {
         .grid-skills-tools{
@@ -18,6 +56,7 @@ grid-template-rows: 40% 37% 53%;
                            !important   ;
                   grid-template-rows: 35% 65%   ;
                 grid-template-columns: 7% 13% 10% 10% 10% 10% 10% 10% 10% 10% ; 
+                
                 }
         .grid-skills-lang{
             margin-bottom: 150px !important; 
@@ -72,16 +111,13 @@ grid-template-rows: 40% 37% 53%;
   top: 15px;
   right: 35px;
       }
-.nav-hide{
-    font-size: 16px;
-}
+
 #nav_icon{
         color: white;
         position: sticky;
         padding : 20px;
         position: -webkit-sticky;
         top: 0; 
-        text-align: end ;
     }
      .overlay {
             height: 100%;
@@ -127,9 +163,6 @@ grid-template-rows: 40% 37% 53%;
  }
 .sidebar {
         color: #ece5e5;
-        padding: 1px;
-
-        
         }
 #sidebar-icons-group a{
         padding:  0px 5px ;  
@@ -143,7 +176,7 @@ grid-template-rows: 40% 37% 53%;
     text-align: center;
         }
 #sidebar-icons-group a:first-child span{
-        margin-bottom:  50px !important ;  
+        margin-bottom:  100% !important ;  
         }
 
 #sidebar-icons-group a:first-child img{
@@ -601,16 +634,18 @@ h1:before {
 
 
  .sidebar {
+         display: flex;
+         flex-direction: column;
         background-color: #F1F1F1 ;
         border: none;
      width: 4%;
       height: 56vh;
-      min-height: 200px;
+      min-height: 56vh;
       overflow: visible;
      
       position: -webkit-sticky;
       position: sticky;
-               top: 18%;
+               top: 21%;
          border-radius: 0px 10px 10px 0px;
       }
       
