@@ -15,6 +15,7 @@
 
 
 <div class="wrapper">
+
   <div class="sidebar">
 <!--     <a href="#Home-page"><img class="sidebar-logo" src="assets/img/logo.svg" alt=""></a>
  -->
@@ -40,6 +41,19 @@
   </div>
 
   <div class="main">
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#about-me"onclick="closeNav()">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <span id="nav_icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     <div id="Home-page">
 
       <div class="main-content-right">
@@ -619,6 +633,14 @@
                                           /* 
              
 */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
             function miraFunction() {
               var t = document.getElementById("mira-content");
               var x = document.getElementById("mirabelles");
