@@ -8,7 +8,7 @@ grid-template-rows: 40% 37% 53%;
  */
 #cv {
     margin-left: 5px;
-    color : var(--color3) ;
+    color : #089cbe ;
     width: 25% !important ;     
     font-size: 22px;
 }
