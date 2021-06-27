@@ -23,7 +23,17 @@
          grid-template-columns : 30% 55% 30% !important;
              margin-bottom: 120px!important;
      }
+    .grid-about-me {
+
+    grid-template-rows: 4% 20% 52% 24%;
+    grid-template-columns: 10% 74% 22% !important;
+    }
+}
+     #gridaboutme{
+        width: 95% !important ;  
+    }
 } 
+
 
 @media screen and (min-width: 1600px)and (max-width: 2000px) 
 {
