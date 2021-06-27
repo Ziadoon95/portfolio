@@ -6,6 +6,15 @@ grid-template-rows: 40% 37% 53%;
 /*   padding: 10px;
 
  */
+#cv {
+    margin-left: 5px;
+    color : var(--color3) ;
+    width: 25% !important ;     
+    font-size: 22px;
+}
+#cv:hover {
+    color : rgb(150,207,78) ;
+}
  .nav-hide{
         font-size: 16px;
     }
